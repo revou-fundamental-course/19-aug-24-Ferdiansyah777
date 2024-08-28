@@ -8,46 +8,37 @@
 </head>
 
 <body>
-    <nav>
-        <header>
-            <div class="navbar-logo">
-                <a href="index.html" class="navbar-icon" role="link">
-                <div class="logo-icon"></div>
-                <span>UNIVERSITAS GARUDA</span>
-                </a>
-            </div>
-        </header>
-
-        <section class="nav-container">
-                <a href="#" class="nav-item">PROFILE</a>
-                <a href="#" class="nav-item">HOME</a>
-                <a href="#" class="nav-item">ACHIEVEMENT</a>
-                <a href="#" class="nav-item">MESSAGE</a>
-        </section>
-    </nav>
+    <!-- NAVIGASI -->
+    <header>
+        <div class="navbar-logo">
+            <a href="index.html" class="navbar-icon" role="link">
+            <img src="assets\logo-nav.png" alt="logo-icon" class="logo-icon">
+            </a>
+        </div>
+        
+        <nav>
+            <ul>
+               <li><a href="#">PROFILE</a></li>
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">ACHIEVEMENT</a></li>
+               <li><a href="#">MESSAGE</a></li>
+            </ul>
+        </nav>
+    </header>
     <hr />
 
-    <section>
-        <h1>MESSAGE US</h1>
-        <form action="" method="post">
-            <div class="form-grup">
-            <label for="name">NAME :</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
-            <label for="date">AGE :</label>
-            <input type="number" name="age" id="age" placeholder="Enter your age">
-            <label for="gender">GENDER :</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-            <label for="Message">Message :</label>
-            <textarea name="message" id="message"></textarea>
-            <input type="submit">
+    <!-- BERANDA -->
+    <main>
+        <article class="content">
+            <div class="welcome-section">
+            <h1>Hi <span id="name">UNKNOWN</span>, WELCOME TO WEBSITE</h1>
+            <h2>UNIVERSITAS GARUDA</h2>
             </div>
-        </form>
-
-        <div id="result">
-            <textarea name="" id="resultbox"></textarea>
-        </div>
-    </section>
+            
+            <div class=banner-container>
+                <img src="assets\bg.png" alt="banner-icon">
+            </div>
+        </article>
+    
+    </main>
 </body>
