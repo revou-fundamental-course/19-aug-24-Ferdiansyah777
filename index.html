@@ -9,7 +9,7 @@
 
 <body>
     <!-- NAVIGASI -->
-    <header>
+    <header class="navbar">
         <div class="navbar-logo">
             <a href="index.html" class="navbar-icon" role="link">
             <div class="logo-icon"></div>
@@ -19,9 +19,9 @@
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
-                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#facilitation">FACILITATION</a></li>
                 <li><a href="#achievement">ACHIEVEMENT</a></li>
-                <li><a href="#message">MESSAGE</a></li>
+                <li><a href="#message-us">MESSAGE</a></li>
             </ul>
         </nav>
     </header>
@@ -31,7 +31,7 @@
         <article id="home">
             <div class="welcome-section">
                 <h1>Hi <span id="name">RAKA</span>, WELCOME TO WEBSITE</h1>
-                <h2>UNIVERSITAS GARUDA</h2>
+                <h1>UNIVERSITAS GARUDA</h1>
             </div>
 
             <div class="banner-container">
@@ -52,22 +52,22 @@
         </article>
 
         <!-- PROFILE -->
-        <section id="profile">
+        <section id="facilitation">
             <header>
-                <h1>OUR PROFILE</h1>
+                <h1>FACILITATION</h1>
             </header>
 
-            <section class="profile-container">
-                <div class="profile-item">
-                    <div class="profile-img profile-1">Ruang Kelas</div>
+            <section class="facilitation-container">
+                <div class="facilitation-item">
+                    <div class="facilitation-img profile-1">Ruang Kelas</div>  
                 </div>
 
-                <div class="profile-item">
-                    <div class="profile-img profile-2">Asrama</div>
+                <div class="facilitation-item">
+                    <div class="facilitation-img profile-2">Asrama</div>
                 </div>
 
-                <div class="profile-item">
-                    <div class="profile-img profile-3">Laboratorium</div>
+                <div class="facilitation-item">
+                    <div class="facilitation-img profile-3">Laboratorium</div>
                 </div>
             </section> 
         </section>
@@ -78,19 +78,74 @@
             </header>
             
             <div class="achievement-container">
-                <div class=></div>
-            </div>
+                <div class="achievement-item">
+                    <div class="achievement-img ach1">
+                        <h1>Mendapatkan Penghargaan Robotic Internasiol 2018</h1>
+                    </div>
+                </div>
 
-            <div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
+                <div class="achievement-item">
+                    <div class="achievement-img ach2">
+                        <h1>Mendapatkan Perhargaan Teknik Internasiol 2015</h1>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- MESSAGE FORM -->
+        <Section id="message-us">
+            <header>
+                <h1>MESSAGE US</h1>
+            </header>
 
-    
-    <script src="js\script.js"></script>
+            <div class="message-form">
+                <div class="form-input">
+                    <form id="form">
+                        <div class="form-grup">
+                            <label for="fname">Name :</label>
+                            <input type="text" id="fname" name="fname" required>
+                        </div>
+
+                        <div class="form-grup">
+                            <label for="dob">Date of Birth :</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+
+                        <div class="form-grup">
+                            <label>Gender :</label>
+                            <div class="form-gender">
+                                <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+
+                        <div class="form-grup">
+                            <label for="message">Message :</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="form-output">
+                    <div class="output">
+                        <p>Name :<span id="oname"></span></p>
+                        <p>Date of Birth :<span id="odob"></span></p>
+                        <p>Gender :<span id="ogender"></span></p>
+                        <p>Message :<span id="omessage"></span></p>
+                        <p>Current Time :<span id="otime"></span></p>
+                    </div>
+                </div>
+            </div>
+        </Section>
     </main>
+
+    <footer>
+        <p>Made by Raka</p>
+    </footer>
+
+    <script src="js\script.js"></script>
 </body>

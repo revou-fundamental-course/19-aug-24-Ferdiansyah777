@@ -10,27 +10,6 @@
 //     replaceName();
 //   });
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    const navbar = document.querySelector('.navbar');
-    let lastScrollTop = 0;
-    const navbarHeight = navbar.offsetHeight;
-
-    window.addEventListener('scroll', function() {
-        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScroll > lastScrollTop) {
-            // Scrolling down
-            navbar.classList.add('hidden');
-        } else {
-            // Scrolling up
-            navbar.classList.remove('hidden');
-        }
-
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-    });
-});
-
 // BANNER IMAGE  
 const slides = document.querySelector('.banner-img');
         const slideCount = document.querySelectorAll('.cover').length;
@@ -43,3 +22,25 @@ const slides = document.querySelector('.banner-img');
         }
 
         setInterval(moveToNextSlide, 3000);
+
+// FORM MESSAGE
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // DATE
+    var current = new Date();
+    var currentTime = current.toLocaleTimeString();
+
+    // FORM VALUE
+    var fname = document.getElementById('fname').value;
+    var dob = document.getElementById('dob').value;
+    var gender = document.querySelector('input[name="gender"]:checked').value;
+    var message = document.getElementById('message').value;
+
+    // DISPLAY OUTPUT
+    document.getElementById('oname').textContent = fname;
+    document.getElementById('odob').textContent = dob;
+    document.getElementById('ogender').textContent = gender;
+    document.getElementById('omessage').textContent = message;
+    document.getElementById('otime').textContent = currentTime;
+});
