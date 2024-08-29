@@ -12,33 +12,85 @@
     <header>
         <div class="navbar-logo">
             <a href="index.html" class="navbar-icon" role="link">
-            <img src="assets\logo-nav.png" alt="logo-icon" class="logo-icon">
+            <div class="logo-icon"></div>
             </a>
         </div>
         
         <nav>
             <ul>
-               <li><a href="#">PROFILE</a></li>
-               <li><a href="#">HOME</a></li>
-               <li><a href="#">ACHIEVEMENT</a></li>
-               <li><a href="#">MESSAGE</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#profile">PROFILE</a></li>
+                <li><a href="#achievement">ACHIEVEMENT</a></li>
+                <li><a href="#message">MESSAGE</a></li>
             </ul>
         </nav>
     </header>
-    <hr />
-
-    <!-- BERANDA -->
+    
     <main>
-        <article class="content">
+        <!-- BANNER -->
+        <article id="home">
             <div class="welcome-section">
-            <h1>Hi <span id="name">UNKNOWN</span>, WELCOME TO WEBSITE</h1>
-            <h2>UNIVERSITAS GARUDA</h2>
+                <h1>Hi <span id="name">RAKA</span>, WELCOME TO WEBSITE</h1>
+                <h2>UNIVERSITAS GARUDA</h2>
             </div>
-            
-            <div class=banner-container>
-                <img src="assets\bg.png" alt="banner-icon">
+
+            <div class="banner-container">
+                <div class="banner-img">
+                    <div class="cover">
+                        <img src="assets\bg1.png" alt="img-1">
+                    </div>
+
+                    <div class="cover">
+                        <img src="assets\bg2.webp" alt="img-2">
+                    </div>
+
+                    <div class="cover">
+                        <img src="assets\bg3.jpg" alt="img-3">
+                    </div> 
+                </div>
             </div>
         </article>
+
+        <!-- PROFILE -->
+        <section id="profile">
+            <header>
+                <h1>OUR PROFILE</h1>
+            </header>
+
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img profile-1">Ruang Kelas</div>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img profile-2">Asrama</div>
+                </div>
+
+                <div class="profile-item">
+                    <div class="profile-img profile-3">Laboratorium</div>
+                </div>
+            </section> 
+        </section>
+
+        <section id="achievement">
+            <header>
+                <h1>ACHIEVEMENT</h1>
+            </header>
+            
+            <div class="achievement-container">
+                <div class=></div>
+            </div>
+
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+
     
+    <script src="js\script.js"></script>
     </main>
 </body>

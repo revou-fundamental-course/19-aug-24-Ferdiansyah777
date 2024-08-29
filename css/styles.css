@@ -8,35 +8,97 @@ header {
 	align-items: center;
 }
 
-.navbar-icon {
-    display: flex;
-    color: black;
-    text-decoration: none;
-    
-}
+/* LOGO NAVIGASI */
 .logo-icon {
     height: 60px;
     width: 200px;
+    background-image: url(../assets/logo-nav.png);
+    background-size: cover;
 }
 
-nav ul {
+/* NAVIGASI LIST */
+nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    justify-content: center;
 }
 
-nav ul li a {
-    text-decoration: none;
+nav a {
     color: black;
-    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 8px;
+
 }
 
+/*BANNER NAME */
 .welcome-section {
     display: flex;
     flex-direction: column;
 }
 
-.banner-container{
-    max-width: 100%;
+/* BANNER */
+.banner-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
+.banner-img {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cover {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: none;
+    line-height: 100%;
+    font-size: 2em;
+    color: #fff;
+}
+
+.cover img {
+    width: 100%;
+    height: auto;
+}
+
+/* PROFIL */
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-item {
+    height: 100px;
+    text-align: -webkit-center;
+}
+
+.profile-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 200px;
+}
+
+/* PROFILE IMAGE */
+.profile-1 {
+    background-image: url(../assets/kelas.jpg);
+}
+
+.profile-2 {
+    background-image: url(../assets/asrama.jpg);
+}
+
+.profile-3 {
+    background-image: url(../assets/labo.webp);
+}
+
+/* ACHIEVEMENT */
+#achievement {
+    padding-top: 150px;
+}
