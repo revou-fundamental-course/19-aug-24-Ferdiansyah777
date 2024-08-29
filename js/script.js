@@ -1,14 +1,10 @@
 // BANNER NAME
-// function replaceName() {
-//     let name = prompt("Siapakah nama anda?", "");
-//     document.getElementById("name").innerHTML = name;
-//   }
+function replaceName() {
+    let name = prompt("Siapakah nama anda?", "");
+    document.getElementById("name").innerHTML = name;
+  }
   
-//   replaceName();
-  
-//   document.getElementById("gantiNama").addEventListener("click", function () {
-//     replaceName();
-//   });
+  replaceName();
 
 // BANNER IMAGE  
 const slides = document.querySelector('.banner-img');
